@@ -28,4 +28,4 @@ authors      = []
 end
 
 results = titles_links.map.with_index { |e, i| e.merge(authors[i]) }
-File.open("hacke_news.txt", "w") { |file| file.puts JSON.pretty_generate(results) }
+File.open('hacke_news.txt', 'w') { |file| file.puts JSON.pretty_generate(results) }
