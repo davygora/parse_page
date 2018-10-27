@@ -25,4 +25,4 @@ doc.css('.showing').each do |showing|
   )
 end
 
-File.open('result.txt', 'w') {|file| file.puts JSON.pretty_generate(showings) }
+File.open('result.txt', 'w') { |file| file.puts JSON.pretty_generate(showings) }
